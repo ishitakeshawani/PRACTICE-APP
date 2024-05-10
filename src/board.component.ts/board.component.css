@@ -11,3 +11,14 @@
     text-align: center;
   }
   
+.blue{
+  color: blue;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+.h3{
+  font-size: x-large;
+}

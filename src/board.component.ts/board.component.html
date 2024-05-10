@@ -1,6 +1,16 @@
 <div class="grid-container">
     <div class="grid-item" *ngFor="let item of list"
-        style="display: flex;justify-content: center;align-items: center;border: 1px solid black;height: 200px;">
+        style="display: flex; flex-direction: column; justify-content: center;align-items: center;border: 1px solid black;">
         {{item}}
+        <!-- property binding -->
+        <img [src]="imageSrc" alt="image"> 
+        <!-- attribute binding -->
+        <button [attr.aria-label]="Submit" [disabled]="isDisabled">{{Submit}}</button>
+        <!-- Class binding -->
+        <p [class.blue]="show">Single Class binding</p>
+        <p [class]="multiClass">Multi class binding</p>
+        <p [class]="arrMultiClass">Multi class binding array</p>
+        <!-- Event binding -->
+        <button (click)="onClick()" (keydown.shift.t)="onClick()">check event binding</button>
     </div>
 </div>
