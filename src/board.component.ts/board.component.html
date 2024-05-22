@@ -12,5 +12,7 @@
         <p [class]="arrMultiClass">Multi class binding array</p>
         <!-- Event binding -->
         <button (click)="onClick()" (keydown.shift.t)="onClick()">check event binding</button>
+        <!-- Two way data binding -->
+        <input type="text" [(ngModel)]="email" (change)="onChange($event)">
     </div>
 </div>
